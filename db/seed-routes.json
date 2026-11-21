@@ -1,0 +1,112 @@
+{
+  "stops": [
+    { "id": "bole", "name": "Bole" },
+    { "id": "kazanchis", "name": "Kazanchis" },
+    { "id": "piassa", "name": "Piassa" },
+    { "id": "megenagna", "name": "Megenagna" },
+    { "id": "mexico", "name": "Mexico" },
+    { "id": "arat-kilo", "name": "Arat Kilo" },
+    { "id": "cmc", "name": "CMC" },
+    { "id": "merkato", "name": "Merkato" },
+    { "id": "meskel-square", "name": "Meskel Square" }
+  ],
+  "routes": [
+  {
+    "id": "bole-piassa",
+    "from": "Bole",
+    "to": "Piassa",
+    "stops": ["bole", "kazanchis", "piassa"],
+    "duration": 35,
+    "fare": 45,
+    "trips": [
+      { "id": "bole-piassa-0815", "departure": "08:15", "arrival": "08:50", "bus": "City shuttle", "seatsLeft": 8 },
+      { "id": "bole-piassa-0900", "departure": "09:00", "arrival": "09:35", "bus": "Express", "seatsLeft": 14 },
+      { "id": "bole-piassa-1015", "departure": "10:15", "arrival": "10:50", "bus": "City shuttle", "seatsLeft": 5 }
+    ]
+  },
+  {
+    "id": "bole-megenagna",
+    "from": "Bole",
+    "to": "Megenagna",
+    "stops": ["bole", "kazanchis", "megenagna"],
+    "duration": 25,
+    "fare": 35,
+    "trips": [
+      { "id": "bole-megenagna-0840", "departure": "08:40", "arrival": "09:05", "bus": "City shuttle", "seatsLeft": 11 },
+      { "id": "bole-megenagna-0930", "departure": "09:30", "arrival": "09:55", "bus": "Express", "seatsLeft": 7 }
+    ]
+  },
+  {
+    "id": "mexico-megenagna",
+    "from": "Mexico",
+    "to": "Megenagna",
+    "stops": ["mexico", "arat-kilo", "megenagna"],
+    "duration": 30,
+    "fare": 40,
+    "trips": [
+      { "id": "mexico-megenagna-0905", "departure": "09:05", "arrival": "09:35", "bus": "City shuttle", "seatsLeft": 9 },
+      { "id": "mexico-megenagna-1000", "departure": "10:00", "arrival": "10:30", "bus": "Express", "seatsLeft": 13 }
+    ]
+  },
+  {
+    "id": "bole-cmc",
+    "from": "Bole",
+    "to": "CMC",
+    "stops": ["bole", "megenagna", "cmc"],
+    "duration": 40,
+    "fare": 55,
+    "trips": [
+      { "id": "bole-cmc-0920", "departure": "09:20", "arrival": "10:00", "bus": "City shuttle", "seatsLeft": 12 },
+      { "id": "bole-cmc-1030", "departure": "10:30", "arrival": "11:10", "bus": "Express", "seatsLeft": 6 }
+    ]
+  },
+  {
+    "id": "piassa-merkato",
+    "from": "Piassa",
+    "to": "Merkato",
+    "stops": ["piassa", "merkato"],
+    "duration": 18,
+    "fare": 25,
+    "trips": [
+      { "id": "piassa-merkato-0835", "departure": "08:35", "arrival": "08:53", "bus": "City shuttle", "seatsLeft": 10 },
+      { "id": "piassa-merkato-0945", "departure": "09:45", "arrival": "10:03", "bus": "City shuttle", "seatsLeft": 4 }
+    ]
+  },
+  {
+    "id": "piassa-meskel",
+    "from": "Piassa",
+    "to": "Meskel Square",
+    "stops": ["piassa", "meskel-square"],
+    "duration": 20,
+    "fare": 30,
+    "trips": [
+      { "id": "piassa-meskel-0850", "departure": "08:50", "arrival": "09:10", "bus": "Express", "seatsLeft": 9 },
+      { "id": "piassa-meskel-1010", "departure": "10:10", "arrival": "10:30", "bus": "City shuttle", "seatsLeft": 15 }
+    ]
+  },
+  {
+    "id": "megenagna-mexico",
+    "from": "Megenagna",
+    "to": "Mexico",
+    "stops": ["megenagna", "arat-kilo", "mexico"],
+    "duration": 18,
+    "fare": 30,
+    "trips": [
+      { "id": "megenagna-mexico-0820", "departure": "08:20", "arrival": "08:38", "bus": "City shuttle", "seatsLeft": 7 },
+      { "id": "megenagna-mexico-0910", "departure": "09:10", "arrival": "09:28", "bus": "Express", "seatsLeft": 12 }
+    ]
+  },
+  {
+    "id": "merkato-cmc",
+    "from": "Merkato",
+    "to": "CMC",
+    "stops": ["merkato", "megenagna", "cmc"],
+    "duration": 30,
+    "fare": 45,
+    "trips": [
+      { "id": "merkato-cmc-0900", "departure": "09:00", "arrival": "09:30", "bus": "City shuttle", "seatsLeft": 8 },
+      { "id": "merkato-cmc-1000", "departure": "10:00", "arrival": "10:30", "bus": "Express", "seatsLeft": 11 }
+    ]
+  }
+  ]
+}

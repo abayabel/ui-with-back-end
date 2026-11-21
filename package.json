@@ -1,0 +1,29 @@
+{
+  "name": "ride-addis-passenger-preview",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n api,web \"node server/index.js\" \"vite --port 5173 --strictPort\"",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --test",
+    "start": "node server/index.js",
+    "scanner:user:add": "node scripts/provision-scanner-user.js",
+    "gtfs:import": "node scripts/import-gtfs.js",
+    "db:up": "docker compose up -d --wait",
+    "db:down": "docker compose down"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.3",
+    "pg": "^8.13.1",
+    "qrcode": "^1.5.4",
+    "yauzl": "^3.4.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "vite": "^6.0.0"
+  }
+}
